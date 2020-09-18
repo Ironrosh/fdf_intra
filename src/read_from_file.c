@@ -6,7 +6,7 @@
 /*   By: mhorpe <mhorpe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 16:37:13 by mhorpe            #+#    #+#             */
-/*   Updated: 2020/08/03 12:42:33 by mhorpe           ###   ########.fr       */
+/*   Updated: 2020/09/19 01:44:12 by mhorpe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int		get_width(char *path)
 		w.trim = ft_strtrim(w.line);
 		if (w.flag == 1)
 		{
-			if (ft_count_words(w.trim, ' ') != w.width)
+			if (ft_count_words(w.trim, ' ') != (size_t)w.width)
 				err_exit("Error: Width must be the same everywhere");
 		}
 		else

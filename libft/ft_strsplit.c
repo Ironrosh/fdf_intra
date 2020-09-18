@@ -6,7 +6,7 @@
 /*   By: mhorpe <mhorpe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/30 21:37:09 by mhorpe            #+#    #+#             */
-/*   Updated: 2020/07/30 22:45:35 by mhorpe           ###   ########.fr       */
+/*   Updated: 2020/09/19 01:46:13 by mhorpe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char				**ft_strsplit(char const *s, char c)
 	j = 0;
 	if (!s || !(str = malloc((sizeof(char *) * (ft_count_words(s, c) + 1)))))
 		return (NULL);
-	while (j < ft_count_words(s, c))
+	while ((size_t)j < ft_count_words(s, c))
 	{
 		while (s[i] == c && s[i] != '\0')
 			i++;
