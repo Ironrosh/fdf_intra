@@ -1,5 +1,5 @@
 # fdf_intra
-Small projects that takes an input file where rows represent y coordinate, columns represent x coordinate and the values separated by whitespaces represent z coordinate. <br/> Example: <br/>
+Small project that takes an input file where rows represent y coordinate, columns represent x coordinate and the values separated by whitespaces represent z coordinate. <br/> Example: <br/>
 
 |    	| x1 	| x2 	| x3 	| x4 	| x5 	|
 |----	|----	|----	|----	|----	|----	|
